@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import blogReducer from '../Redux/Slices/blogsSlice'
+import propertyToolReducer from '../Redux/Slices/propertyToolSlice'
 
 export const store = configureStore({
   reducer: {
-    blogs: blogReducer
+    propertytool: propertyToolReducer
   },
 })

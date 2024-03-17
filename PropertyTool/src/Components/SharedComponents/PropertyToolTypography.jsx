@@ -2,7 +2,7 @@ import React from 'react'
 import {styled} from '@mui/material/styles';
 import { Typography } from '@mui/material';
 
-const BlogTypography = styled(Typography)(({theme, color, textalign, size='32px', weight='700', lineheight='28px'})=>({
+const PropertyTypography = styled(Typography)(({theme, color, textalign, size='32px', weight='700', lineheight='28px'})=>({
     fontFamily: 'Manrope',
     color: color || theme.palette.primary.heading,
     fontSize: size,
@@ -11,11 +11,11 @@ const BlogTypography = styled(Typography)(({theme, color, textalign, size='32px'
     lineHeight: lineheight
 }))
 
-const BlogsTypography = (props) => {
+const PropertyToolTypography = (props) => {
     const {children, ...rest} = props
   return (
-    <BlogTypography {...rest}>{children}</BlogTypography>
+    <PropertyTypography {...rest}>{children}</PropertyTypography>
   )
 }
 
-export default BlogsTypography
+export default PropertyToolTypography
